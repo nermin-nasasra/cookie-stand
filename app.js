@@ -1,5 +1,5 @@
 'use stricit';
-//var hours = ['6am', '7am', '8am', '9am','10am','11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+var hours = ['6am', '7am', '8am', '9am','10am','11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 function getRandomCust(MinCust, MaxCust) {
     return Math.floor( Math.random() * (MaxCust - MinCust) + MinCust) ;
@@ -10,18 +10,18 @@ Location : 'Seattle',
 MinCust :  23,
 MaxCust :65,
 AvgCookieSale :6.3,
-hours : ['6am', '7am', '8am', '9am','10am','11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm','8pm'],
+
 nofcokies:[],
 sum:0,
 custperhour: function() {
  
-       for (var i=0; i<this.hours.length; i++)
+       for (var i=0; i< hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
         this.nofcokies.push((getRandomCust(65,23))*avg);
         
     }
-    for (var i=0; i<this.hours.length; i++)
+    for (var i=0; i<hours.length; i++)
        {
           this.sum=this.sum+this.nofcokies[i];
 
@@ -36,11 +36,11 @@ articleE1.appendChild(h2E1);
  h2E1.textContent = this.Location;
  var ulE1 = document.createElement('ul');
 articleE1.appendChild(ulE1);
-for(var i =0; i<this.hours.length ; i++) {
+for(var i =0; i<hours.length ; i++) {
  var liE1 = document.createElement('li');
  ulE1.appendChild(liE1);
 
-liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
+liE1.textContent =`${hours[i]} :${this.nofcokies[i]}cookies.`;
 
 
  }
@@ -61,18 +61,18 @@ Location : 'Tokyo',
 MinCust :  3,
 MaxCust : 24,
 AvgCookieSale : 1.2,
-hours : ['6am', '7am', '8am', '9am','10am','11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm','8pm'],
+
 nofcokies:[],
 sum:0,
 custperhour: function() {
  
-       for (var i=0; i<this.hours.length; i++)
+       for (var i=0; i<hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
         this.nofcokies.push((getRandomCust(24,3))*avg);
         
     }
-    for (var i=0; i<this.hours.length; i++)
+    for (var i=0; i<hours.length; i++)
        {
           this.sum=this.sum+this.nofcokies[i];
 
@@ -87,11 +87,11 @@ articleE1.appendChild(h2E1);
  h2E1.textContent = this.Location;
  var ulE1 = document.createElement('ul');
 articleE1.appendChild(ulE1);
-for(var i =0; i<this.hours.length ; i++) {
+for(var i =0; i<hours.length ; i++) {
  var liE1 = document.createElement('li');
  ulE1.appendChild(liE1);
 
-liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
+liE1.textContent =`${hours[i]} :${this.nofcokies[i]}cookies.`;
  }
  liE1.textContent=` Total: :${this.sum} cookies.`;
  }
@@ -111,18 +111,18 @@ Location : 'Dubai',
 MinCust :  11,
 MaxCust : 38,
 AvgCookieSale : 3.7,
-hours : ['6am', '7am', '8am', '9am','10am','11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm','8pm'],
+
 nofcokies:[],
 sum:0,
 custperhour: function() {
  
-       for (var i=0; i<this.hours.length; i++)
+       for (var i=0; i<hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
         this.nofcokies.push((getRandomCust(38,11))*avg);
         
     }
-    for (var i=0; i<this.hours.length; i++)
+    for (var i=0; i<hours.length; i++)
        {
           this.sum=this.sum+this.nofcokies[i];
 
@@ -137,11 +137,11 @@ articleE1.appendChild(h2E1);
  h2E1.textContent = this.Location;
  var ulE1 = document.createElement('ul');
 articleE1.appendChild(ulE1);
-for(var i =0; i<this.hours.length ; i++) {
+for(var i =0; i<hours.length ; i++) {
  var liE1 = document.createElement('li');
  ulE1.appendChild(liE1);
 
-liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
+liE1.textContent =`${hours[i]} :${this.nofcokies[i]}cookies.`;
  }
  liE1.textContent=` Total: :${this.sum} cookies`;
  }
@@ -159,18 +159,18 @@ Location : 'Paris',
  MinCust : 20 ,
  MaxCust : 38,
 AvgCookieSale : 2.3,
-hours : ['6am', '7am', '8am', '9am','10am','11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm','8pm'],
+
 nofcokies:[],
 sum:0,
 custperhour: function() {
  
-       for (var i=0; i<this.hours.length; i++)
+       for (var i=0; i<hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
         this.nofcokies.push((getRandomCust(38,20))*avg);
         
     }
-    for (var i=0; i<this.hours.length; i++)
+    for (var i=0; i<hours.length; i++)
        {
           this.sum=this.sum+this.nofcokies[i];
 
@@ -185,11 +185,11 @@ articleE1.appendChild(h2E1);
  h2E1.textContent = this.Location;
  var ulE1 = document.createElement('ul');
 articleE1.appendChild(ulE1);
-for(var i =0; i<this.hours.length ; i++) {
+for(var i =0; i<hours.length ; i++) {
  var liE1 = document.createElement('li');
  ulE1.appendChild(liE1);
 
-liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
+liE1.textContent =`${hours[i]} :${this.nofcokies[i]}cookies.`;
  }
  liE1.textContent=` Total: :${this.sum} cookies.`;
  }
@@ -208,19 +208,19 @@ Location : 'Lima',
 MinCust :  2 ,
 MaxCust :16 ,
 AvgCookieSale : 4.6,
-hours : ['6am', '7am', '8am', '9am','10am','11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm','8pm'],
+
 nofcokies:[],
 imagePath: 'salmon.png',
 sum:0,
 custperhour: function() {
  
-       for (var i=0; i<this.hours.length; i++)
+       for (var i=0; i<hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
         this.nofcokies.push((getRandomCust(16,2))*avg);
         
     }
-    for (var i=0; i<this.hours.length; i++)
+    for (var i=0; i<hours.length; i++)
        {
           this.sum=this.sum+this.nofcokies[i];
 
@@ -235,11 +235,11 @@ articleE1.appendChild(h2E1);
  h2E1.textContent = this.Location;
  var ulE1 = document.createElement('ul');
 articleE1.appendChild(ulE1);
-for(var i =0; i<this.hours.length ; i++) {
+for(var i =0; i<hours.length ; i++) {
  var liE1 = document.createElement('li');
  ulE1.appendChild(liE1);
 
-liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
+liE1.textContent =`${hours[i]} :${this.nofcokies[i]}cookies.`;
 }
  liE1.textContent=` Total: :${this.sum} cookies.`;
 
