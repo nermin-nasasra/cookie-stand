@@ -23,7 +23,7 @@ custperhour: function() {
     }
     for (var i=0; i<this.hours.length; i++)
        {
-          var sum=sum+this.nofcokies[i];
+          this.sum=this.sum+this.nofcokies[i];
 
        }
 },
@@ -44,7 +44,7 @@ liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
 
 
  }
- liE1.textContent=` Total: :${this.sum}`;
+ liE1.textContent=` Total: :${this.sum} cookies.`;
  }
  }
  console.log("number of cookies",Seattle.nofcokies);
@@ -74,7 +74,7 @@ custperhour: function() {
     }
     for (var i=0; i<this.hours.length; i++)
        {
-          var sum=sum+this.nofcokies[i];
+          this.sum=this.sum+this.nofcokies[i];
 
        }
 },
@@ -93,7 +93,7 @@ for(var i =0; i<this.hours.length ; i++) {
 
 liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
  }
- liE1.textContent=` Total: :${this.sum}`;
+ liE1.textContent=` Total: :${this.sum} cookies.`;
  }
  }
  console.log("number of cookies",Tokyo.nofcokies);
@@ -124,7 +124,7 @@ custperhour: function() {
     }
     for (var i=0; i<this.hours.length; i++)
        {
-          var sum=sum+this.nofcokies[i];
+          this.sum=this.sum+this.nofcokies[i];
 
        }
 },
@@ -143,7 +143,7 @@ for(var i =0; i<this.hours.length ; i++) {
 
 liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
  }
- liE1.textContent=` Total: :${this.sum}`;
+ liE1.textContent=` Total: :${this.sum} cookies`;
  }
  }
  console.log("number of cookies",Dubai.nofcokies);
@@ -172,7 +172,7 @@ custperhour: function() {
     }
     for (var i=0; i<this.hours.length; i++)
        {
-          var sum=sum+this.nofcokies[i];
+          this.sum=this.sum+this.nofcokies[i];
 
        }
 },
@@ -191,7 +191,7 @@ for(var i =0; i<this.hours.length ; i++) {
 
 liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
  }
- liE1.textContent=` Total: :${this.sum}`;
+ liE1.textContent=` Total: :${this.sum} cookies.`;
  }
  }
  console.log("number of cookies",Paris.nofcokies);
@@ -222,7 +222,7 @@ custperhour: function() {
     }
     for (var i=0; i<this.hours.length; i++)
        {
-          var sum=sum+this.nofcokies[i];
+          this.sum=this.sum+this.nofcokies[i];
 
        }
 },
@@ -241,7 +241,7 @@ for(var i =0; i<this.hours.length ; i++) {
 
 liE1.textContent =`${this.hours[i]} :${this.nofcokies[i]}cookies.`;
 }
- liE1.textContent=` Total: :${this.sum}`;
+ liE1.textContent=` Total: :${this.sum} cookies.`;
 
  
       //    var imgE1 = document.createElement('img');
