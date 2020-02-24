@@ -69,7 +69,7 @@ custperhour: function() {
        for (var i=0; i<this.hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
-        this.nofcokies.push((getRandomCust(65,23))*avg);
+        this.nofcokies.push((getRandomCust(24,3))*avg);
         
     }
     for (var i=0; i<this.hours.length; i++)
@@ -119,7 +119,7 @@ custperhour: function() {
        for (var i=0; i<this.hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
-        this.nofcokies.push((getRandomCust(65,23))*avg);
+        this.nofcokies.push((getRandomCust(38,11))*avg);
         
     }
     for (var i=0; i<this.hours.length; i++)
@@ -167,7 +167,7 @@ custperhour: function() {
        for (var i=0; i<this.hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
-        this.nofcokies.push((getRandomCust(65,23))*avg);
+        this.nofcokies.push((getRandomCust(38,20))*avg);
         
     }
     for (var i=0; i<this.hours.length; i++)
@@ -217,7 +217,7 @@ custperhour: function() {
        for (var i=0; i<this.hours.length; i++)
        {
           var avg=Math.floor(this.AvgCookieSale);
-        this.nofcokies.push((getRandomCust(65,23))*avg);
+        this.nofcokies.push((getRandomCust(16,2))*avg);
         
     }
     for (var i=0; i<this.hours.length; i++)
