@@ -7,7 +7,6 @@ container.appendChild(articleE1);
  container.appendChild(tableE1);
  tableE1.border='2';
 
- //var city=['Seattle','Tokyo','Dubai','Paris','Lima','Totals'];
  var Locationsof =[];
  function loc (location,MinCust,MaxCust,AvgCookieSale){
     
@@ -24,24 +23,21 @@ container.appendChild(articleE1);
    loc.prototype.getRandomCust= function (MinCust, MaxCust) {
       var avgcus1 = Math.floor( Math.random() * (this.MaxCust - this.MinCust) + this.MinCust);
       avgcus.push(avgcus1);
-      console.log(avgcus);
-   
    }
+
 loc.prototype.custperhour=function(){
    for (var i=0; i< hours.length; i++)
    {
       var avg=Math.floor(this.AvgCookieSale);
     this.nofcokies.push((avgcus[i]*avg));
-    console.log(avg);
 }
 
 for (var i=0; i<hours.length; i++)
    {
       this.sum=this.sum+this.nofcokies[i];
-
-      console.log(this.sum);
    }
 }
+
 
 loc.prototype.render=function(){
 
@@ -77,28 +73,13 @@ loc.prototype.render=function(){
          d2=document.createElement('td');
          r1.appendChild(d2);
          d2.textContent=(this.nofcokies[i]);
-         console.log(this.nofcokies[i]);
       }
 
       var d3=document.createElement('td');
       r1.appendChild(d3);
       d3.textContent=(this.sum);
-      console.log('helloooo',this.sum);
-
    }
 
-   
-  
-
-
-   //  loc.prototype.total=function(){
-       
-   //    var r2=document.createElement('tr');
-   //    tableE1.appendChild(r2);
-   //    var d4=document.createElement('td');
-   //    r2.appendChild(d4);
-   //    d4.textContent='total';
-   //  }
 
 ////////////////////////////////////////////////////////////////////////////////
    var Seattle= new loc('seattle',23,56,6.3);
@@ -140,9 +121,6 @@ loc.prototype.render=function(){
    Lima.custperhour();
 
 
-  
-//    var total= new loc(0,0,0,0);
-// total.sum;
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -185,9 +163,6 @@ loc.prototype.render=function(){
          for(var j=0;j<Locationsof.length;j++){
             
             sumOfTotal+=Locationsof[j].nofcokies[i];
-            //sumOfTotal=sumOfTotal+sum;
-           
-            console.log('sum',sumOfTotal);
          }
          maxTotals+=sumOfTotal;
          var d5=document.createElement('td');
@@ -198,11 +173,10 @@ loc.prototype.render=function(){
       r2.appendChild(d6);
       d6.textContent=maxTotals;
    }
-      
-   
-   
    footer();
-   /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 // var Seattle={
 // Location : 'Seattle',
 // MinCust :  23,
