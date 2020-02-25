@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 5px ;
+    font-size: 20px;
+}
+ul{
+    background-color: rgb(41, 182, 182);
+}
+li{
+    text-align: left;
+  
+   margin: 2px 300px 2px 300px;
+   background-color: palevioletred;
+   padding: 10px;
+   color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  ul img{
+      padding: 50px;
+  }
+
+  iframe{
+left: auto;
+  }
+  body{
+     background-color: rgb(162, 201, 162);
+  }
+  table, th, td {
+    border: 1px solid black;
+    margin: 0 auto;
+  
+  }
+  td {
+    height: 50px;
+    vertical-align: bottom;
+  }
+  th {
+    text-align: left;
+    height: 50px;
+  }
+ 
+  
