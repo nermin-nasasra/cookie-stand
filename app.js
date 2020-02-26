@@ -4,6 +4,7 @@ var container = document.getElementById('Cookies');
 var articleE1 = document.createElement('article');
 container.appendChild(articleE1);
  var tableE1 = document.createElement('table');
+ //tableE1.sitAttribute('id',tableid);
  container.appendChild(tableE1);
  tableE1.border='2';
 
@@ -173,8 +174,41 @@ loc.prototype.render=function(){
       r2.appendChild(d6);
       d6.textContent=maxTotals;
    }
-   footer();
-//////////////////////////////////////////////////////////
+   
+   ////////////////////////////////////////////////////
+  var myForm = document.getElementById('cookiesForm');
+  myForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  var location = event.target.location.value;
+  console.log(location);
+  var MinCust = event.target.MinCust.value;
+  console.log(MinCust);
+  var MaxCust = event.target.MaxCust.value;
+  console.log(MaxCust);
+  var AvgCookieSale = event.target.AvgCookieSale.value;
+  console.log(AvgCookieSale);
+  var cookiesObj = new loc(location,MinCust,MaxCust,AvgCookieSale);
+
+ tableE1.removeChild(tableE1.lastChild);
+
+  cookiesObj.getRandomCust(10,45);
+  cookiesObj.custperhour();
+  cookiesObj.tablerow();
+ 
+//   var newrow=tableE1.insertRow(-1);
+
+//   var j=document.createElement('tr');
+  
+
+
+
+}) 
+footer();
+
+
+
+
+/////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 // var Seattle={
