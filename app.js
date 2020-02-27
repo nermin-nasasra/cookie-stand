@@ -174,6 +174,7 @@ loc.prototype.render=function(){
       r2.appendChild(d6);
       d6.textContent=maxTotals;
    }
+   footer();
    
    ////////////////////////////////////////////////////
   var myForm = document.getElementById('cookiesForm');
@@ -189,21 +190,26 @@ loc.prototype.render=function(){
   console.log(AvgCookieSale);
   var cookiesObj = new loc(location,MinCust,MaxCust,AvgCookieSale);
 
- tableE1.removeChild(tableE1.lastChild);
+ 
+if (MaxCust<=MinCust){
+   alert("the min must be less than max");}
 
-  cookiesObj.getRandomCust(10,45);
+   else{
+
+      tableE1.removeChild(tableE1.lastChild);
+   
+  cookiesObj.getRandomCust();
   cookiesObj.custperhour();
   cookiesObj.tablerow();
- 
-//   var newrow=tableE1.insertRow(-1);
-
-//   var j=document.createElement('tr');
+   
   
-
-
-
+   
+  
+  myForm.reset();
+  footer();
+   }
 }) 
-footer();
+
 
 
 
