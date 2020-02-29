@@ -3,12 +3,17 @@ h1{
     font-weight: bold;
     margin: 5px ;
     font-size: 20px;
+    font-family: 'Pacifico';
+    color: maroon;
 }
 ul{
     background-color: rgb(41, 182, 182);
 }
 li{
     text-align: left;
+    font-family: 'Pacifico' ;
+    font-family: 'Trade Winds';
+    color: rgb(61, 6, 61);
   
    margin: 2px 300px 2px 300px;
    background-color: palevioletred;
@@ -31,7 +36,7 @@ li{
 left: auto;
   }
   body{
-     background-color: rgb(162, 201, 162);
+ background-color: rgb(219, 179, 179);
   }
   table, th, td {
     border: 1px solid black;
@@ -47,4 +52,9 @@ left: auto;
     height: 50px;
   }
  
-  
+  p{
+    font-family: 'Pacifico' ;
+    font-family: 'Trade Winds' ;
+    font-family: 'Lacquer' ;
+    color: navy;
+  }
