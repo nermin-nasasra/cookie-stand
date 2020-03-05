@@ -180,19 +180,24 @@ loc.prototype.render=function(){
   var myForm = document.getElementById('cookiesForm');
   myForm.addEventListener('submit', function(event) {
   event.preventDefault();
+//   if(location=" "){
+//      alert("you must add location");
+//    }
+//      else{
   var location = event.target.location.value;
-  console.log(location);
+//   }
   var MinCust = event.target.MinCust.value;
-  console.log(MinCust);
+
   var MaxCust = event.target.MaxCust.value;
-  console.log(MaxCust);
+  
   var AvgCookieSale = event.target.AvgCookieSale.value;
-  console.log(AvgCookieSale);
+
   var cookiesObj = new loc(location,MinCust,MaxCust,AvgCookieSale);
 
  
-if (MaxCust<=MinCust){
-   alert("the min must be less than max");}
+if (MaxCust < MinCust){
+   alert("the min must be less than max");
+}
 
    else{
 
@@ -207,7 +212,9 @@ if (MaxCust<=MinCust){
   
   myForm.reset();
   footer();
-   }
+
+  }
+   
 }) 
 
 
